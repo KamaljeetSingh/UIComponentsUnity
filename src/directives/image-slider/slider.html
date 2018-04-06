@@ -1,0 +1,16 @@
+<div class="slider-icon-container">
+    <div class="mover-left" >
+        <button class="btn btn-default" ng-mousedown="onmouseDownLeft()" ng-mouseup="onmouseUp()" disabled><i class="fas fa-angle-left"></i></button>
+    </div>
+    <div class="show-icon">
+        <div class="display-view">
+            <div class="icon-image" ng-click="selectIcon($index)" ng-repeat="o in icons_obj">
+                <img ng-src="{{'assets/images/' + o.icon + '.png'}}">
+                <div class="icon-line" ng-if="o.icon == selectedVal"></div>
+            </div> 
+        </div>
+    </div>
+    <div class="mover-right">
+        <button class="btn btn-default" ng-mousedown="onmouseDownRight()" ng-mouseup="onmouseUp()" ><i class="fas fa-angle-right"></i></button>
+    </div>
+</div>

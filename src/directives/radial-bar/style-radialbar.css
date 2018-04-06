@@ -1,0 +1,49 @@
+.svg-circle{
+    height: auto;
+    width: 100%;
+}
+
+.svg-circle .progress-circle{
+    
+    stroke-width: 10px;
+    stroke:lightgray;
+    fill:white;
+}
+
+.svg-circle .progress-circle-move{
+    cx: 50%;
+    cy: 50%;
+    r: 60px;
+    stroke-width: 10px;
+    stroke:darkorange;
+    fill:none;
+    /*-webkit-animation : 1s progress;
+    -webkit-animation-fill-mode: forwards;*/
+}
+
+.svg-circle .progress-value{
+    text-anchor: middle; 
+    fill: darkorange;
+    font-size: 30px;
+}
+
+.svg-circle path{
+    stroke:green;
+    fill:none;
+    stroke-dasharray: 50;
+    stroke-dashoffset: 310;
+
+}
+
+/*
+@-webkit-keyframes progress {
+    from {
+        stroke-dasharray: 0 376;
+    }
+    to {
+        stroke-dasharray: 50 326;
+    }
+}*/
+
+
+

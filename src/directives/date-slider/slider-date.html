@@ -1,0 +1,19 @@
+<div class="slider-date-container">
+    <div class="mover-left" >
+        <button class="btn btn-default" ng-mousedown="onmouseDownLeft()" ng-mouseup="onmouseUp()" disabled><i class="fas fa-angle-left"></i></button>
+    </div>
+    <div class="show-icon">
+        <hr class="hor-line"/>
+        <div class="display-view">
+            <div class="icon-image"  ng-repeat="o in icons_obj | orderBy: 'deadline'">
+                <div class="icon-name">{{o.name}}</div>
+                <div><i class="fas fa-map-marker icon-date"></i></div>
+                <div class="icon-subtitle">{{o.dateString}}</div>
+            </div>  
+        </div>
+    </div>
+    <div class="mover-right">
+        <button class="btn btn-default" ng-mousedown="onmouseDownRight()" ng-mouseup="onmouseUp()" ><i class="fas fa-angle-right"></i></button>
+    </div>
+</div>
+<!--ng-click="selectIcon($index)"-->

@@ -1,0 +1,48 @@
+.custom{
+    margin-left:20px;
+}
+.custom .checkbutton{
+    display: none;  
+}
+
+.custom div{
+    display: inline-block;
+    text-align: center;
+    vertical-align:bottom;
+    padding: 0;
+    width: auto;
+}
+
+.custom label{
+    cursor:pointer;
+    margin-bottom: 0;
+}
+
+.custom .checkmark{
+    width:20px;
+    height:20px;
+    background-color: lightgray;
+    border-radius: 2px;
+    transition:1s;
+    text-align: center;
+}
+
+.custom .checkmark .fa-check{
+    position:absolute;
+    font-size: 100%;
+    z-index: 10;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    display: none;
+}
+
+.rotatelabel{
+    background-color: #3C7BD0 !important;
+    transform: rotate(360deg);
+}
+
+.showicon{
+    color: white;
+    display: block !important;
+}

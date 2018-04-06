@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>AllComponents</title>  
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link rel="stylesheet" href="/directives/checkbox/style-checkbox.css">
+    <link rel="stylesheet" href="/directives/drag-bar/style-dragbar.css">
+    <link rel="stylesheet" href="/directives/image-slider/style-iconslider.css">
+    <link rel="stylesheet" href="/directives/on-off-switch/style-switch.css">
+    <link rel="stylesheet" href="/directives/radial-bar/style-radialbar.css">
+    <link rel="stylesheet" href="/directives/date-slider/style-dateslider.css">
+    
+</head>
+<body ng-app="myApp">
+    <div class="row">
+        <div class="col-md-6" ng-controller="ctrlone">
+            <checkbox position="right" ng-model="checkValue"  on-change="checkboxNotify()">Hello </checkbox>
+            <br>
+            <drag-bar ng-model="percentVal" min=0 max=100 on-change="dragbarNotify()"></drag-bar>
+            <br>
+            <icon-slider ng-model="selected" icons="img_obj" on-change="iconsliderNotify()"></icon-slider> 
+            <br>
+            <on-off-toggle value1="Yes" value2="No" ng-model="switchValue" onchange="switchNotify()"></on-off-toggle>
+            <br>
+            <radial-bar ng-model="progressValue"></radial-bar>
+            <br>
+            <date-slider dates="dateValue"></date-slider>
+        </div>
+        <div class="col-md-6" ng-controller="ctrltwo as ctwo">
+            <checkbox position="right" ng-model="checkValue"  on-change="checkboxNotify()">Hello </checkbox>
+            <br>
+            <drag-bar ng-model="percentVal" min=0 max=100 on-change="dragbarNotify()"></drag-bar>
+            <br>
+            <icon-slider ng-model="selected" icons="img_obj" on-change="iconsliderNotify()"></icon-slider>
+            <br>
+            <on-off-toggle value1="Yes" value2="No" ng-model="switchValue" onchange="switchNotify()"></on-off-toggle>
+        </div>
+    </div>
+
+    <script src="/app.js"></script>
+    <script src="assets/js/script-index.js"></script>
+    <script src="services/shared-service.js"></script>
+    <!--directives based components-->
+    <script src="/directives/checkbox/script-checkbox.js"></script>
+    <script src="/directives/drag-bar/script-bar.js"></script>
+    <script src="/directives/image-slider/script-slider.js"></script>
+    <script src="/directives/on-off-switch/on-off-script.js"></script>
+    <script src="/directives/radial-bar/script-bar-radial.js"></script>
+    <script src="/directives/date-slider/script-slider-date.js"></script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,84 @@
+.slider-date-container{
+    width:100%;
+    height:auto;
+    display: flex;
+}
+
+.slider-date-container .mover-left{
+    position: relative;
+    display:inline-block;
+    width: 10%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.slider-date-container .mover-left button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.slider-date-container .show-icon{
+    position: relative;
+    display: inline-block;
+    width: 90%;
+    height: 70px;   
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+.slider-date-container .show-icon .hor-line{
+    position: absolute;
+    border-color: lightgray;
+    width:100%;
+    margin-top:35px;
+    margin-bottom:0;
+}
+
+.slider-date-container .show-icon .display-view{
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    transition: 1s;
+}
+
+.slider-date-container .show-icon .display-view .icon-image{
+    width: 100px;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+.slider-date-container .show-icon .display-view .icon-image i{
+    color: #4179B8;
+}
+
+.slider-date-container .show-icon .display-view .icon-image .icon-date{
+    font-size: 20px; 
+}
+
+
+.slider-date-container .show-icon .display-view .icon-image .icon-name{
+    font-size: 12px; 
+}
+
+.slider-date-container .show-icon .display-view .icon-image .icon-subtitle{
+    font-size: 12px; 
+}
+
+.slider-date-container .mover-right{
+    position: relative;
+    display: inline-block;
+    width: 10%;
+    text-align: center;
+    cursor:pointer;
+}
+
+.slider-date-container .mover-right button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

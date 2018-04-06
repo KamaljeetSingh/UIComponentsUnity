@@ -1,0 +1,12 @@
+<div class="custom">
+    <div ng-if="position == 'left'">
+        <label for="{{checkid}}"  ng-transclude></label>
+    </div>
+    <div>
+        <input type="checkbox" ng-attr-id="{{checkid}}" class="checkbutton" ng-click="changeValue()">
+        <label for="{{checkid}}" class="checkmark"><i class="fas fa-check"></i></label>
+    </div>
+    <div ng-if="position == 'right'">
+        <label for="{{checkid}}" ng-transclude></label>
+    </div>
+</div>

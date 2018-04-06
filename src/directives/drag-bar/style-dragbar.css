@@ -1,0 +1,44 @@
+.contain-bar{
+    position: relative;
+    margin:10px;
+    padding:10px;
+    font-size: 0;
+}
+
+.contain-bar .bar{
+    display: inline-block;
+    position:relative;
+    width:85%;
+    height:14px;
+    background-color: lightgray;
+}
+
+.bar .fill{
+    position: absolute;
+    padding:0;
+    height:inherit;
+    background-color: #70A42E;
+}
+
+.bar .slider{
+    position:absolute;
+    top:-100%;
+    left: -6px;
+    height: 42px;
+    width:12px;
+    cursor: pointer;
+    background-color: #434343;
+}
+
+.bar .slider:hover{
+     background-color: #727272;
+}
+
+.contain-bar .percent{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 6%;
+    font-size: 14px;
+    user-select: none;
+}
